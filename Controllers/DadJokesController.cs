@@ -48,7 +48,7 @@ namespace DadJokesDegreedCodeChallenge.Controllers
             try
             {
                 var jokes = await _dadJokesProvider.SearchJoke(term);
-                //jokes.Results.ForEach(r => r.Joke = r.Joke.Replace(term, $"<b>{term}</b>"));
+                
                 return Ok(jokes);
             }
             catch (Exception e)

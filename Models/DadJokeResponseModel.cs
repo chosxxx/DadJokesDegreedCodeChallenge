@@ -29,8 +29,9 @@ namespace DadJokesDegreedCodeChallenge.Models
         {
             get
             {
-                if (Joke.Length < 50) return JokeSize.Short;
-                if (Joke.Length < 100) return JokeSize.Medium;
+                var wordCount = Joke.Split(' ').Length;
+                if (wordCount < 10) return JokeSize.Short;
+                if (wordCount < 20) return JokeSize.Medium;
                 return JokeSize.Long;
             }
         }

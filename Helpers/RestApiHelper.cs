@@ -1,16 +1,9 @@
 ﻿using RestSharp;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace DadJokesDegreedCodeChallenge.Helpers
 {
-    public interface IRestApiHelper
-    {
-        Task<string> GetRequest(string baseUrl, string endpoint, IList<Parameter> parameters, IDictionary<string, string> headers);
-    }
-
     public class RestApiHelper : IRestApiHelper
     {
         public async Task<string> GetRequest(string baseUrl, string endpoint, IList<Parameter> parameters, IDictionary<string, string> headers)
