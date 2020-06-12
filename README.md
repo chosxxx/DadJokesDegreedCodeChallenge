@@ -1,2 +1,14 @@
 # DadJokesDegreedCodeChallenge
  Code Challenge for Degreed
+
+*Challenge*
+
+Create an application that uses the “I can haz dad joke” api (https://icanhazdadjoke.com/api) to display jokes. The front-end code should be as simple as possible.  Use any front-end mechanism you wish but keep it simple.
+
+We're interested in how you design and implement the back-end service. As such, all the communication with the icanhazdadjoke API and preparing the data for display should be implemented in a back-end service using C# and .NET.  
+
+There should be two options the user can choose from:
+
+Fetch a random joke.
+
+Accept a search term and display the first 30 jokes containing that term.  The matching term should be emphasized in some simple way (upper, quotes, angle brackets, etc.).  The matching jokes should be grouped by length: Short (<10 words), Medium (<20 words), Long (>= 20 words)
