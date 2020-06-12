@@ -2,22 +2,12 @@
 using DadJokesDegreedCodeChallenge.Models;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using RestSharp;
-using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace DadJokesDegreedCodeChallenge.Providers
 {
-    public interface IICanHazDadJokesProvider
-    {
-        Task<DadJokeResponseModel> GetRandomJoke();
-        Task<MultipleDadJokesResponseModel> SearchJoke(string term);
-    }
-
     public class ICanHazDadJokesProvider : IICanHazDadJokesProvider
     {
         #region Private fields
